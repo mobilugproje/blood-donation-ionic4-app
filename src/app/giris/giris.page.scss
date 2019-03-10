@@ -7,8 +7,15 @@ ion-item{
      }
      ion-card{
         margin: 15px auto;
+             
         
              max-width: 100%;
+             border-radius : 30px;
+             border-top: 3px solid rgb(255, 255, 255);
+             border-bottom: 2px solid rgb(255, 255, 255);
+             border-right: 2px solid rgb(255, 255, 255);
+             border-left: 2px solid rgb(255, 255, 255);
+             
         --background:rgba(255, 255, 255, 0.624);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3em;
@@ -25,7 +32,7 @@ ion-item{
         color: rgba(255, 255, 255, 0.521)
     }
     .custom-button{
-      
+      --border-radius: 15px;
         color:#FF0C0C;
         font-size: 16px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,6 +46,7 @@ ion-item{
         font-weight: 500;
       }
       .beyaz{
+        --border-radius: 15px;
         color:rgb(255, 255, 255);
         font-size: 16x;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,4 +61,5 @@ ion-item{
 
        
       }
+      
      
