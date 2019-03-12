@@ -25,7 +25,7 @@ async kayitol(user: User ){
 try{
   const info = await this.fireAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
 if(info){
-  this.navCtrl.navigateForward('/giris');
+  this.navCtrl.navigateForward('/profile');
 }
 
 }

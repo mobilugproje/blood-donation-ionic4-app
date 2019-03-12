@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'giris', loadChildren: './giris/giris.module#GirisPageModule' },
   { path: 'kayit', loadChildren: './kayit/kayit.module#KayitPageModule' },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
 ];
 
 
