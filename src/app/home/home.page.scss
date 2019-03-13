@@ -1,1 +1,46 @@
 
+.myheader{
+    text-align: center;
+    --background: linear-gradient(180deg,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff ,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff ,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#E9E9E9);
+  }
+  .mybold{
+    color:#000;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  }
+  .beyaz{
+    --border-radius: 15px;
+    color:rgb(255, 255, 255);
+    font-size: 16x;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+  }
+  h1{
+    text-align: left;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 15px;
+      font-size: 14px;
+      font-weight: 390;
+      color: rgb(0, 0, 0)
+  }
+
+  ion-card{
+    margin: 15px auto;
+         
+    
+         max-width: 100%;
+         border-radius : 25px;
+         border-top: 2px solid #FF5151;
+         border-bottom: 2px solid #FF5151;
+         border-right: 2px solid #FF5151;
+         border-left: 2px solid #FF5151;
+         
+    --background:#FBFBFB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 3em;
+font-weight: lighter;
+color: #FFF
+ }

@@ -4,6 +4,7 @@ import { take } from 'rxjs/operators';
 import { NavController } from '@ionic/angular';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Profile } from '../../models/profile';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',

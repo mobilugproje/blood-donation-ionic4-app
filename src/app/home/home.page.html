@@ -1,17 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ana Sayfa/ Profil
-    </ion-title>
+<ion-header no-border>
+  <ion-toolbar class="myheader">
+    <ion-title class="mybold">Anasayfa</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+    <ion-card>
 
+      <h1>GSM Numarası : {{(profileData | async)?.numara}}</h1>
+      <h1>Adı : {{(profileData | async)?.ad}}</h1>
+      <h1>Soyadı : {{(profileData | async)?.soyad}}</h1>
+      <h1>Yaşı : {{(profileData | async)?.yas}}</h1>
+      <h1>Kan Grubu : {{(profileData | async)?.kan}}</h1>
+      <h1>Şehir : {{(profileData | async)?.sehir}}</h1>
     
+
+</ion-card>
+
+
     <ion-button  (click)="cikis()"  style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium" color="warning" expand="block" >Çıkış Yap</ion-button>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+
 
   
 </ion-content>
