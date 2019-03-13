@@ -9,34 +9,34 @@
     <ion-card>
 
         <ion-item>  
-            <ion-label class="mybold"   position="floating">GSM Numaranız</ion-label>
-            <ion-input   class="mybold"  type="text" [(ngModel)]="profile.numara"   ></ion-input>
+            <ion-label class="mybold"   position="floating">*GSM Numaranız</ion-label>
+            <ion-input   class="mybold"  type="number" placeholder="Örn: 0532-532-00-00" [(ngModel)]="profile.numara"   ></ion-input>
             </ion-item>
             
             
             <ion-item> 
               <ion-label class="mybold"  position="floating" >*Adınız</ion-label>
-              <ion-input class="mybold"  type="text"  [(ngModel)]="profile.ad"  ></ion-input> 
+              <ion-input class="mybold"  type="text" placeholder="Örn: Salih" [(ngModel)]="profile.ad"  ></ion-input> 
               </ion-item>
 
               <ion-item> 
                   <ion-label class="mybold"  position="floating" >*Soyadınız</ion-label>
-                  <ion-input class="mybold"  type="text"  [(ngModel)]="profile.soyad"  ></ion-input> 
+                  <ion-input class="mybold"  type="text" placeholder="Örn: Yılmaz" [(ngModel)]="profile.soyad"  ></ion-input> 
                   </ion-item>
 
                   <ion-item> 
                       <ion-label class="mybold"  position="floating" >*Yaşınız</ion-label>
-                      <ion-input class="mybold"  type="text"  [(ngModel)]="profile.yas"  ></ion-input> 
+                      <ion-input class="mybold"  type="number" placeholder="Örn: 24" [(ngModel)]="profile.yas"  ></ion-input> 
                       </ion-item>
 
                       <ion-item> 
                           <ion-label class="mybold"  position="floating" >*Kan Grubunuz</ion-label>
-                          <ion-input class="mybold"  type="text"  [(ngModel)]="profile.kan"  ></ion-input> 
+                          <ion-input class="mybold"  type="text" placeholder="Örn: B+" [(ngModel)]="profile.kan"  ></ion-input> 
                           </ion-item>
 
                           <ion-item> 
                               <ion-label  class="mybold"  position="floating" >*Yaşadığınız Şehir</ion-label>
-                              <ion-input class="mybold"  type="text"  [(ngModel)]="profile.sehir"  ></ion-input> 
+                              <ion-input class="mybold"  type="text" placeholder="Örn: İzmir/Bostancı" [(ngModel)]="profile.sehir"  ></ion-input> 
                               </ion-item>
                               <ion-text  style="margin-bottom: 15px"color="danger">
                                   <h1>                                 </h1>
