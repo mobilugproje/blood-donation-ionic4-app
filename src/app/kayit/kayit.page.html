@@ -8,7 +8,7 @@
 </ion-header>
    
 <ion-content padding>
-
+    <ion-card>
     <ion-item>  
         <ion-label class="mybold"   position="floating">E-posta</ion-label>
         <ion-input   class="mybold"  type="text" [(ngModel)]="user.email"   ></ion-input>
@@ -20,11 +20,11 @@
           <ion-input class="mybold"  type="Password"  [(ngModel)]="user.password"  ></ion-input> 
           </ion-item>
           
-         <ion-button  (click)="kayitol(user)"  style="margin-top: 20px" text-capitalize="false" size="medium" color="warning" expand="block" >Kayit Ol</ion-button>
+         <ion-button  (click)="kayitol(user)" class="beyaz" style="margin-bottom: 13px"  style="margin-top: 15px" text-capitalize="false" size="medium" color="warning" expand="block" >Kayit Ol</ion-button>
          
               
           
           
-  <ion-button  (click)="back()"  style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium" color="warning" expand="block" >Gardaş geri dön</ion-button>
-
+  <ion-button  (click)="back()"   style="margin-bottom: 20px" text-capitalize="false" class="beyaz" size="medium" color="warning" expand="block" >Gardaş geri dön</ion-button>
+</ion-card>
 </ion-content>

@@ -24,7 +24,7 @@ export class HomePage {
           message: 'Kan Bağışı Uygulamamıza Hoşgeldiniz!',
           duration: 2000,
           showCloseButton: true,
-          position: 'top',
+          position: 'bottom',
           closeButtonText: 'Tamam',
           color: "light"
                }); toast.present();
@@ -33,6 +33,7 @@ export class HomePage {
       else {
         const toast = await this.toast.create({
           message: 'Kan ...... Uygulamamıza Hoşgeldiniz!',
+          position: 'bottom',
           duration: 3000
                }); toast.present();
 
