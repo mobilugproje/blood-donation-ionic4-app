@@ -1,3 +1,3 @@
 # KanBagisiUygulama
-Gerçek asıl uygulamanın git'i
-Burayı güncelleyerek devam ederiz.
+Mobil Uygulama Geliştirme Dersinin projesi 2 kişilik projedir.
+
