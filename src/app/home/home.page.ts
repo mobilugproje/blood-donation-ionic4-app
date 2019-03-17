@@ -41,8 +41,11 @@ export class HomePage {
         })
      }
 
+     yenile(){
+  window.location.reload();
+}
+
 cikis(){
   this.navCtrl.navigateRoot('/giris');
-  window.location.reload();
 }
 }
