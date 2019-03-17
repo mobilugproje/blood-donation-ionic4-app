@@ -5,4 +5,5 @@ soyad: string;
 yas: Date;
 kan: string;
 sehir: string;
+cinsiyet: string;
 }

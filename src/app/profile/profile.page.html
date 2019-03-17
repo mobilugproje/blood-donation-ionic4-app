@@ -42,6 +42,13 @@
                             <ion-select-option value="AB-">AB-</ion-select-option>
                        </ion-select>
                           </ion-item>
+                          <ion-item> 
+                            <ion-label class="mybold"  position="floating" >*Cinsiyetiniz</ion-label>
+                            <ion-select [(ngModel)]="profile.cinsiyet" placeholder="Örn: Erkek" class="mybold" >
+                              <ion-select-option value="Erkek">Erkek</ion-select-option>
+                              <ion-select-option value="Kadın">Kadın</ion-select-option>
+                         </ion-select>
+                            </ion-item>
 
                           <ion-item> 
                               <ion-label  class="mybold"  position="floating" >*Yaşadığınız Şehir</ion-label>
@@ -50,7 +57,7 @@
                               <ion-text  style="margin-bottom: 15px"color="danger">
                                   <h1>                                 </h1>
                                 </ion-text>
-                              <ion-button (click)="save()" text-capitalize="false" class="beyaz"   color="warning"style="margin-bottom: 25px"   expand="block" >
+                              <ion-button (click)="save()" text-capitalize="false" class="beyaz2"  style="margin-bottom: 25px"   expand="block" >
                                   <ion-icon  slot="start"  size="medium" name="save"></ion-icon>
                                   Kaydet
                                 </ion-button>
