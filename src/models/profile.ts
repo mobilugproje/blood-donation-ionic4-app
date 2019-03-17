@@ -2,7 +2,7 @@ export interface Profile{
 numara: string;
 ad: string;
 soyad: string;
-yas: string;
+yas: Date;
 kan: string;
 sehir: string;
 }

@@ -25,13 +25,22 @@
                   </ion-item>
 
                   <ion-item> 
-                      <ion-label class="mybold"  position="floating" >*Yaşınız</ion-label>
-                      <ion-input class="mybold"  type="number" placeholder="Örn: 24" [(ngModel)]="profile.yas"  ></ion-input> 
+                      <ion-label class="mybold"  position="floating" >*Doğum Tarihiniz</ion-label>
+                      <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MM YYYY"placeholder="Örn: 22/07/1998" class="mybold2"    [(ngModel)]="profile.yas"  ></ion-datetime> 
                       </ion-item>
 
                       <ion-item> 
                           <ion-label class="mybold"  position="floating" >*Kan Grubunuz</ion-label>
-                          <ion-input class="mybold"  type="text" placeholder="Örn: B+" [(ngModel)]="profile.kan"  ></ion-input> 
+                          <ion-select [(ngModel)]="profile.kan" placeholder="Örn: A+" class="mybold" >
+                            <ion-select-option value="A+">A+</ion-select-option>
+                            <ion-select-option value="0+">0+</ion-select-option>
+                            <ion-select-option value="B+">B+</ion-select-option>
+                            <ion-select-option value="AB+">AB+</ion-select-option>
+                            <ion-select-option value="A-">A-</ion-select-option>
+                            <ion-select-option value="0-">0-</ion-select-option>
+                            <ion-select-option value="B-">B-</ion-select-option>
+                            <ion-select-option value="AB-">AB-</ion-select-option>
+                       </ion-select>
                           </ion-item>
 
                           <ion-item> 
