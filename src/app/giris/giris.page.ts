@@ -42,6 +42,16 @@ user={} as User;
  this.navCtrl.navigateForward('/kayit');
 
  }
+ naber(){
+ 
+ this.navCtrl.navigateForward('/kanbagis');
+ 
+  }
+  naber2(){
+ 
+    this.navCtrl.navigateForward('/kanbagislist');
+    
+     }
   ngOnInit() {
            
   }

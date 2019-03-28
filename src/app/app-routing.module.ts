@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: 'giris', loadChildren: './giris/giris.module#GirisPageModule' },
   { path: 'kayit', loadChildren: './kayit/kayit.module#KayitPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
+  { path: 'kanbagis', loadChildren: './kanbagis/kanbagis.module#KanbagisPageModule' },
+  { path: 'kanbagislist', loadChildren: './kanbagislist/kanbagislist.module#KanbagislistPageModule' },
 ];
 
 

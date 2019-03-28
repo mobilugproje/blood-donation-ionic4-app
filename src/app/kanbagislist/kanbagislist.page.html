@@ -1,0 +1,24 @@
+<ion-header no-border>
+  <ion-toolbar  class="myheader">
+      <ion-title class="mybold" >Kan Bağışlayanlar Listesi</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color ="danger"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+  <ion-list lines="inset">
+    <ion-item *ngFor="let item of kanbagislistRef$ | async">
+      <h2> İsmi: {{item.isim}}</h2>
+      <h3> Numarası: {{item.gsm}}</h3>
+      <h4> Konumu: {{item.konum}}</h4>
+      <h5> Kan Grubu: {{item.kgrub}}</h5>
+      
+    </ion-item>
+  </ion-list>
+</ion-card>
+
+
+</ion-content>
