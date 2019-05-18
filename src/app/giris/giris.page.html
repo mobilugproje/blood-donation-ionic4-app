@@ -1,45 +1,46 @@
 
 
 <ion-content  class="no-scroll" class="bg" padding>
-    <img   style="margin-top: 14px" src="../assets/LogoForReal.png"/>
-    <ion-card>
-       
- <ion-item>  
+  <img   style="margin-top: 14px" src="../assets/LogoForReal.png"/>
+  <ion-card >
+     
+<ion-item>  
 <ion-label class="mybold"   position="floating">E-posta</ion-label>
 <ion-input   class="mybold"  type="text" [(ngModel)]="user.email"   ></ion-input>
 </ion-item>
 
 
 <ion-item> 
-  <ion-label class="mybold"  position="floating" >Şifre</ion-label>
-  <ion-input class="mybold"  type="Password"  [(ngModel)]="user.password"  ></ion-input> 
-  </ion-item>
- <ion-button  (click)="giris(user)"  style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium" color="warning" expand="block" ><ion-icon slot="start" name="key"></ion-icon>Giriş Yap</ion-button>
- <ion-text color="secondary">
-    <h1>Hesabınız mı Yok?</h1>
-  </ion-text>
-      
-  
-  <ion-button  (click)="kayit()" color="medium" text-capitalize="false" class="custom-button"style="margin-bottom: 7px"  expand="block"   >E-posta ile Kayıt Ol
-    <ion-icon   size="medium" slot="start" name="mail"></ion-icon>
+<ion-label class="mybold"  position="floating" >Şifre</ion-label>
+<ion-input class="mybold"  type="Password"  [(ngModel)]="user.password"  ></ion-input> 
+</ion-item>
+<ion-button  (click)="giris(user)"  style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium" color="warning" expand="block" ><ion-icon slot="start" name="key"></ion-icon>Giriş Yap</ion-button>
+<ion-text color="secondary">
+  <h1>Hesabınız mı Yok?</h1>
+</ion-text>
     
-  </ion-button>
-  <ion-button text-capitalize="false" class="beyaz"   color="tertiary"style="margin-bottom: 7px" expand="block" >
-      <ion-icon  slot="start"  size="medium" name="logo-facebook"></ion-icon>
-      Facebook ile Devam et
-    </ion-button>
 
-    <ion-button text-capitalize="false" class="beyaz" style="margin-top: 8px"  style="margin-bottom: 15px" color="danger" expand="block" >
-        <ion-icon   size="medium" slot="start" name="logo-google"></ion-icon>
-        Google + ile Devam et
-      </ion-button>
-      <ion-button (click)="naber()" text-capitalize="false" class="beyaz"  expand="block" >
-        ***BUNLAR DENEME 
-      </ion-button>
+<ion-button  (click)="kayit()" color="medium" text-capitalize="false" class="custom-button"style="margin-bottom: 7px"  expand="block"   >E-posta ile Kayıt Ol
+  <ion-icon   size="medium" slot="start" name="mail"></ion-icon>
   
-      <ion-button (click)="naber2()" text-capitalize="false" class="beyaz"  expand="block" >
-        ***ANA MENÜDE OLUCAKLAR
-      </ion-button>
-      </ion-card>
+</ion-button>
+<ion-button (click)="googleLogintwo()" text-capitalize="false" class="beyaz"   color="danger" style="margin-bottom: 7px" expand="block" >
+  <ion-icon   size="medium" slot="start" name="logo-google"></ion-icon>
+    Google + ile Oturum Aç
+  </ion-button>
+
+
+ 
+
+   
+  <ion-button 
+  (click)="googleLogin()" text-capitalize="false" class="beyaz" style="margin-top: 8px"  style="margin-bottom: 15px" color="tertiary" expand="block" >
+  <ion-icon name="logo-googleplus"></ion-icon>
+      Google  ile Oturum Profili Oluştur
+    </ion-button>
+ 
+
+  
+    </ion-card>
 
 </ion-content>
