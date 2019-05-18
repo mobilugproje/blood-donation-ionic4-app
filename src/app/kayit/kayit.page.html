@@ -1,30 +1,32 @@
 <ion-header no-border>
-  <ion-toolbar  class="myheader">
-      <ion-title class="mybold" >Kayıt Ol</ion-title>
+  <ion-toolbar class="myheader">
+    <ion-title class="mybold">Kayıt Ol</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button color ="danger"></ion-back-button>
+      <ion-back-button color="danger"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-   
+
 <ion-content padding>
-    <ion-card>
-    <ion-item>  
-        <ion-label class="mybold"   position="floating">E-posta</ion-label>
-        <ion-input   class="mybold"  type="text" [(ngModel)]="user.email"   ></ion-input>
-        </ion-item>
-        
-        
-        <ion-item> 
-          <ion-label class="mybold"  position="floating" >Şifre</ion-label>
-          <ion-input class="mybold"  type="Password"  [(ngModel)]="user.password"  ></ion-input> 
-          </ion-item>
-          
-         <ion-button  (click)="kayitol(user)" class="beyaz" style="margin-bottom: 13px"  style="margin-top: 15px" text-capitalize="false" size="medium" color="warning" expand="block" ><ion-icon slot="start" name="person-add"></ion-icon>  Kayit Ol</ion-button>
-         
-              
-       
-          
-  <ion-button  (click)="back()"   style="margin-bottom: 20px" text-capitalize="false" class="beyaz2" size="medium"  expand="block" ><ion-icon  slot="start" name="arrow-round-back"></ion-icon>Geri Dön</ion-button>
-</ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label class="mybold" position="floating">E-posta</ion-label>
+      <ion-input class="mybold" type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="mybold" position="floating">Şifre</ion-label>
+      <ion-input class="mybold" type="Password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="kayitol(user)" class="beyaz" style="margin-bottom: 13px" style="margin-top: 15px"
+      text-capitalize="false" size="medium" color="warning" expand="block">
+      <ion-icon slot="start" name="person-add"></ion-icon> Kayit Ol
+    </ion-button>
+
+    <ion-button (click)="back()" style="margin-bottom: 20px" text-capitalize="false" class="beyaz2" size="medium"
+      expand="block">
+      <ion-icon slot="start" name="arrow-round-back"></ion-icon>Geri Dön
+    </ion-button>
+  </ion-card>
 </ion-content>

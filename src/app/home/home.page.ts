@@ -12,8 +12,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  
-  profileData : Observable<any>
+
+  profileData: Observable<any>
 
   constructor(private toast: ToastController, private fireAuth: AngularFireAuth, public navCtrl: NavController, private dataBase: AngularFireDatabase) { }
   async ionViewWillEnter() {
@@ -27,25 +27,25 @@ export class HomePage {
           position: 'bottom',
           closeButtonText: 'Tamam',
           color: "light"
-               }); toast.present();
-               this.profileData = this.dataBase.object(`profile/${data.uid}`).valueChanges();
-     }
+        }); toast.present();
+        this.profileData = this.dataBase.object(`profile/${data.uid}`).valueChanges();
+      }
       else {
         const toast = await this.toast.create({
           message: 'Kan ...... Uygulamamıza Hoşgeldiniz!',
           position: 'bottom',
           duration: 3000
-               }); toast.present();
+        }); toast.present();
 
-            }
-        })
-     }
+      }
+    })
+  }
 
-     yenile(){
-  window.location.reload();
-}
+  yenile() {
+    window.location.reload();
+  }
 
-cikis(){
-  this.navCtrl.navigateRoot('/giris');
-}
+  cikis() {
+    this.navCtrl.navigateRoot('/giris');
+  }
 }

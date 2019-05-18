@@ -5,23 +5,29 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-card>
+  <ion-card>
 
-      <h1>GSM Numarası : 0-{{(profileData | async)?.numara}}</h1>
-      <h1>Adı : {{(profileData | async)?.ad}}</h1>
-      <h1>Soyadı : {{(profileData | async)?.soyad}}</h1>
-      <h1>Doğum Tarihi : {{(profileData | async)?.yas}}</h1>
-      <h1>Kan Grubu : {{(profileData | async)?.kan}}</h1>
-      <h1>Cinsiyet : {{(profileData | async)?.cinsiyet}}</h1>
-      <h1>Şehir : {{(profileData | async)?.sehir}}</h1>
-    
-
-</ion-card>
+    <h1>GSM Numarası : 0-{{(profileData | async)?.numara}}</h1>
+    <h1>Adı : {{(profileData | async)?.ad}}</h1>
+    <h1>Soyadı : {{(profileData | async)?.soyad}}</h1>
+    <h1>Doğum Tarihi : {{(profileData | async)?.yas}}</h1>
+    <h1>Kan Grubu : {{(profileData | async)?.kan}}</h1>
+    <h1>Cinsiyet : {{(profileData | async)?.cinsiyet}}</h1>
+    <h1>Şehir : {{(profileData | async)?.sehir}}</h1>
 
 
-    <ion-button  (click)="cikis()"  style="margin-top: 20px" text-capitalize="false" class="beyaz2" size="medium" expand="block" ><ion-icon  slot="start" name="exit"></ion-icon>Çıkış Yap</ion-button>
-    <ion-button  (click)="yenile()"  style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium" color="warning" expand="block" > <ion-icon   size="medium" slot="start" name="refresh"></ion-icon>Yenile</ion-button>
+  </ion-card>
 
 
-  
+  <ion-button (click)="cikis()" style="margin-top: 20px" text-capitalize="false" class="beyaz2" size="medium"
+    expand="block">
+    <ion-icon slot="start" name="exit"></ion-icon>Çıkış Yap
+  </ion-button>
+  <ion-button (click)="yenile()" style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium"
+    color="warning" expand="block">
+    <ion-icon size="medium" slot="start" name="refresh"></ion-icon>Yenile
+  </ion-button>
+
+
+
 </ion-content>
