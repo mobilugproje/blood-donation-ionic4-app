@@ -23,12 +23,12 @@
   }
 .KartButon{
     --border-radius: 21px;
-    height: 80px;
-    width: 37%;
+    height: 100px;
+    width: 33%;
     
     margin: 2px auto;
-    margin-left: 20px;
-    margin-top: -85px;
+    margin-left: 40px;
+    margin-top: -50px;
 
     font-size: 15%;
     --background:rgb(255, 255, 255);
@@ -38,13 +38,13 @@
 .KartButon2{
     --border-radius: 21px;
     
-    height: 80px;
-    width: 37%;
+    height: 100px;
+    width: 33%;
 
     margin: 2px auto;
-    margin-left: 35px;
+    margin-left: 80px;
     margin-right: 2px;
-    margin-top: -85px;
+    margin-top: -45px;
    
     
     font-size: 15%;
@@ -56,13 +56,11 @@
 
 .KartButon3{
     --border-radius: 21px;
-    height: 80px;
-    width: 37%;
+    height: 100px;
+    width: 33%;
     
     margin: 2px auto;
-    margin-left: 100px;
-    margin-top:-110px;
-
+    margin-left: 170px;
     font-size: 15%;
     --background:rgb(255, 255, 255);
     
@@ -71,37 +69,29 @@
 
 .resim{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-    height:130px;
-    margin-top: 20px;
+    height: 70vh;
+    width: auto;
+    margin: auto;
   }
 
 ion-card{
-    margin: 15px auto;
-    margin-top: 30px;  
-         
+    margin-top:70px;
+    margin-left: 2px;
+    margin-right: 2px;
+             
+        
+    max-width: 100%;
+    border-radius : 30px;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
     
-         max-width: 99%;
-         border-radius : 30px;
-         border-top: 1px ;
-         border-bottom: 1px  ;
-         border-right: 1px  ;
-         border-left: 1px ;
-         
-         --background:rgba(255, 255, 255, 0.308);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3em;
-  font-weight: lighter;
-  
-  height:210px;
-  width: 98%;
-  
-  position: relative;
-      z-index: 1;
-     
-  
+--background:rgba(255, 255, 255, 0.24);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 3em;
+font-weight: lighter;
+color: #FFF
   }
 .bg{
     --background: linear-gradient(230deg,#FF4A7B,#FF4D4D);

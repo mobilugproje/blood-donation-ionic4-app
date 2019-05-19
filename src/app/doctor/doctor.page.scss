@@ -22,13 +22,11 @@
     
   }
 
-.resim{
+  .resim{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150%;
-    height:250px;
-    margin-top: -25px;
+    height: 70vh;
+    width: auto;
+    margin: auto;
   }
 
 ion-card{
@@ -47,7 +45,7 @@ ion-card{
   font-size: 3em;
   font-weight: lighter;
   
-  height:180px;
+  height:250px;
   width: 93%;
   
   position: relative;
@@ -67,13 +65,13 @@ ion-card{
     color:#FF275B;
   }
   .KartButon{
-    --border-radius: 21px;
-    height: 80px;
-    width: 37%;
+    --border-radius: 18px;
+    height: 105px;
+    width: 31%;
     
     margin: 2px auto;
-    margin-left: 20px;
-    margin-top: -25px;
+    margin-left: 35px;
+    margin-top: 30px;
 
     font-size: 15%;
     --background:rgb(255, 255, 255);
@@ -81,24 +79,18 @@ ion-card{
      
 }
 .KartButon2{
-    --border-radius: 21px;
+    --border-radius: 18px;
     
-    height: 80px;
-    width: 37%;
+    height: 105px;
+    width: 31%;
 
     margin: 2px auto;
-    margin-left: 35px;
-    margin-right: 2px;
-    margin-top: -25px;
+    margin-left: 78px;
+    margin-top: 30px;
    
     
     font-size: 15%;
     --background:rgb(255, 255, 255);
     
 }
-.cikislabel{
-    font-size: 15%;
-    color: #FF5E5E;
-    margin-top: 10px;
-    
-}
+
