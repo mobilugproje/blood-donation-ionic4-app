@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>doktorblooddonors</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar class="myheader">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="doctor" color="light"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
 
-<ion-content padding>
 
+<ion-content class="bg" padding>
+  <ion-card>
+    <ion-list lines="inset">
+      <ion-item *ngFor="let item of kanbagislistAsync$ | async" (click)="selectkanbagis(item)">
+        <ion-label>
+          <button (click)="presentActionSheet()" class="threedot" style="float:right">
+            <ion-icon name="more"></ion-icon>
+          </button>
+          <h2> İsmi: {{item.payload.val().isim}}</h2>
+          <h3> Numarası: {{item.payload.val().gsm}}</h3>
+          <h4> Konumu: {{item.payload.val().konum}}</h4>
+          <h5> Kan Grubu: {{item.payload.val().kgrub}}</h5>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 </ion-content>
