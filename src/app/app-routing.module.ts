@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
   { path: 'mainmenu', loadChildren: './mainmenu/mainmenu.module#MainmenuPageModule' },
   { path: 'faq', loadChildren: './faq/faq.module#FaqPageModule' },
+  { path: 'doctor', loadChildren: './doctor/doctor.module#DoctorPageModule' },
+  { path: 'doktorblooddonors', loadChildren: './doktorblooddonors/doktorblooddonors.module#DoktorblooddonorsPageModule' },
 
 ];
 

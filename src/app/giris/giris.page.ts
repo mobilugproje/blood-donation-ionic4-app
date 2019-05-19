@@ -102,6 +102,10 @@ export class GirisPage implements OnInit {
   }
 
   async giris(user: User) {
+    if(user.email=="doktor" && user.password == "doktor"){
+      this.navCtrl.navigateRoot('/doctor');
+    }
+    else{
     try {
       const info = await this.fireAuth.auth.signInWithEmailAndPassword(user.email, user.password);
       if (info) {
@@ -121,7 +125,7 @@ export class GirisPage implements OnInit {
       toast.present();
     }
   }
-
+  }
   kayit() {
 
     this.navCtrl.navigateForward('/kayit');
