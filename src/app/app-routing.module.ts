@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'kayit', loadChildren: './kayit/kayit.module#KayitPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'kanbagis', loadChildren: './kanbagis/kanbagis.module#KanbagisPageModule' },
-  { path: 'kanbagislist', loadChildren: './kanbagislist/kanbagislist.module#KanbagislistPageModule' },
+  { path: 'kanbagislist', loadChildren: './kanbagislist/kanbagislist.module#KanbagislistPageModule' },  { path: 'lisanslar', loadChildren: './lisanslar/lisanslar.module#LisanslarPageModule' },
+
 ];
 
 

@@ -24,7 +24,7 @@ export class HomePage {
           message: 'Kan Bağışı Uygulamamıza Hoşgeldiniz!',
           duration: 2000,
           showCloseButton: true,
-          position: 'bottom',
+          position: 'top',
           closeButtonText: 'Tamam',
           color: "light"
         }); toast.present();
