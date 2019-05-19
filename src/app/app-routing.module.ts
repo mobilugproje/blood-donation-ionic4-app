@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'kanbagislist', loadChildren: './kanbagislist/kanbagislist.module#KanbagislistPageModule' },  { path: 'lisanslar', loadChildren: './lisanslar/lisanslar.module#LisanslarPageModule' },
   { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
   { path: 'mainmenu', loadChildren: './mainmenu/mainmenu.module#MainmenuPageModule' },
+  { path: 'faq', loadChildren: './faq/faq.module#FaqPageModule' },
 
 ];
 
