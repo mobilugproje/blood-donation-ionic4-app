@@ -1,33 +1,83 @@
 <ion-header no-border>
   <ion-toolbar class="myheader">
-    <ion-title class="mybold">Anasayfa</ion-title>
+    <ion-title class="mybold">{{(profileData | async)?.ad}} {{(profileData | async)?.soyad}}</ion-title>
+    <ion-menu-button class="SideMenuButton" color="light"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card>
+<ion-content class="bg">
 
-    <h1>GSM Numarası : 0-{{(profileData | async)?.numara}}</h1>
-    <h1>Adı : {{(profileData | async)?.ad}}</h1>
-    <h1>Soyadı : {{(profileData | async)?.soyad}}</h1>
-    <h1>Doğum Tarihi : {{(profileData | async)?.yas}}</h1>
-    <h1>Kan Grubu : {{(profileData | async)?.kan}}</h1>
-    <h1>Cinsiyet : {{(profileData | async)?.cinsiyet}}</h1>
-    <h1>Şehir : {{(profileData | async)?.sehir}}</h1>
+    <img src="../assets/blood-transfusion.png"  class="resim">
+  
+<ion-card round class="Card" >
+  
+    <h1 class="yazi"><ion-icon name="phone-portrait"></ion-icon> GSM Numarası : {{(profileData | async)?.numara}}</h1>
+    <h1 class="yazi"><ion-icon name="contact"></ion-icon> Adı : {{(profileData | async)?.ad}}</h1>
+    <h1 class="yazi"><ion-icon name="paper"></ion-icon> Soyadı : {{(profileData | async)?.soyad}}</h1>
+    <h1 class="yazi"><ion-icon name="calendar"></ion-icon> Yaşı : {{(profileData | async)?.yas}}</h1>
+    <h1 class="yazi"><ion-icon name="water"></ion-icon> Kan Grubu : {{(profileData | async)?.kan}}</h1>
+    <h1 class="yazi"><ion-icon name="transgender"></ion-icon> Cinsiyet : {{(profileData | async)?.Cinsiyet  }}</h1>
+    <h1 class="yazi"><ion-icon name="business"></ion-icon> Şehir : {{(profileData | async)?.sehir}}</h1>
 
+</ion-card>
 
-  </ion-card>
+</ion-content >
+<ion-tabs class="YanMenu">
+    
+<ion-app class="YanMenu">
+    
+  <ion-menu side="start" class="YanMenu">
+    
+        <ion-header class="YanMenu" >
+            <!-- Yan menü -->
+          <ion-toolbar class="YanMenu">    
+            
+           
+          </ion-toolbar>
+        </ion-header>
+       
+        <ion-content class="YanMenu">
+          <ion-list class="YanMenu">
+            <ion-item class="YanMenu">         
+               <br>
+               <br>
+            </ion-item>
 
+           
+            <ion-item class="YanMenu">
+                <ion-icon slot="end" size="medium" name="information-circle" color="light"></ion-icon>
+                 <ion-button href="/hakkimizda" style="margin-top: 20px" text-capitalize="false" size="medium" color="light" expand="block">Hakkımızda</ion-button>
+              
+              </ion-item>
 
-  <ion-button (click)="cikis()" style="margin-top: 20px" text-capitalize="false" class="beyaz2" size="medium"
-    expand="block">
-    <ion-icon slot="start" name="exit"></ion-icon>Çıkış Yap
-  </ion-button>
-  <ion-button (click)="yenile()" style="margin-top: 20px" text-capitalize="false" class="beyaz" size="medium"
-    color="warning" expand="block">
-    <ion-icon size="medium" slot="start" name="refresh"></ion-icon>Yenile
-  </ion-button>
+            <ion-item class="YanMenu">
+               <ion-button href="/iletisim" style="margin-top: 20px" text-capitalize="false"  size="medium" color="light" expand="block">Lisanslar</ion-button>
+              <ion-icon slot="end" size="medium" name="at" color="light"></ion-icon>
+            </ion-item>
 
+            <ion-item class=" YanMenu">
+                 <ion-button href='/giris'  style="margin-top: 20px" text-capitalize="false"  size="medium" color="light" expand="block" >Çıkış Yap</ion-button>
+                <ion-icon  slot="end"  size="medium" name="log-out" color="light"></ion-icon>
+            </ion-item>
+           
 
-
-</ion-content>
+          </ion-list>
+        </ion-content>
+        
+      </ion-menu>
+      <ion-router-outlet main ></ion-router-outlet>
+    </ion-app>
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+      <ion-tab-button href="/anamenu" >
+        <ion-icon name="home" class="iicon"></ion-icon>
+      </ion-tab-button>
+      
+    
+      <ion-tab-button>
+        <ion-icon name="person"  class="iicon"></ion-icon>
+      </ion-tab-button>
+    
+      </ion-tab-bar>
+    </ion-tabs>
+    
