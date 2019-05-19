@@ -102,29 +102,29 @@ export class GirisPage implements OnInit {
   }
 
   async giris(user: User) {
-    if(user.email=="doktor" && user.password == "doktor"){
+    if (user.email == "doktor" && user.password == "doktor") {
       this.navCtrl.navigateRoot('/doctor');
     }
-    else{
-    try {
-      const info = await this.fireAuth.auth.signInWithEmailAndPassword(user.email, user.password);
-      if (info) {
-        await this.navCtrl.navigateRoot('/home');
-      }
+    else {
+      try {
+        const info = await this.fireAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+        if (info) {
+          await this.navCtrl.navigateRoot('/home');
+        }
 
+      }
+      catch (e) {
+        const toast = await this.toast.create({
+          message: 'Lütfen şifreyi veya E-posta adresinizi doğru girdiğinizden emin olunuz!',
+          duration: 3000,
+          showCloseButton: true,
+          position: 'top',
+          closeButtonText: 'Tamam',
+          color: "light"
+        });
+        toast.present();
+      }
     }
-    catch (e) {
-      const toast = await this.toast.create({
-        message: 'Lütfen şifreyi veya E-posta adresinizi doğru girdiğinizden emin olunuz!',
-        duration: 3000,
-        showCloseButton: true,
-        position: 'top',
-        closeButtonText: 'Tamam',
-        color: "light"
-      });
-      toast.present();
-    }
-  }
   }
   kayit() {
 
