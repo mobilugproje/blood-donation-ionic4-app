@@ -21,7 +21,7 @@
     color:  #ffffff;
     
   }
-  .KartButon{
+.KartButon{
     --border-radius: 21px;
     height: 80px;
     width: 25%;
@@ -32,8 +32,11 @@
 
     
     --background:rgb(255, 255, 255);
+
+
     position: relative;
     z-index: 1;
+  
      
 }
 .KartButon2{
@@ -46,14 +49,13 @@
     margin-left: 21px;
     margin-top: 10px;
    
-    
-    
+
     --background:rgb(255, 255, 255);
+
     position: relative;
     z-index: 1;
+    
 }
-
-
 
 .KartButon3{
     --border-radius:21px;
@@ -68,46 +70,36 @@
 
     position: relative;
     z-index: 1;
+    
 }
+
 
 .resim{
     display: block;
-    height: 70vh;
-    width: auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height:130px;
+    margin-top: 20px;
   }
 
   ion-card{
 
          
     
-    max-width: 100%;
-    border-radius : 15px;
-    border-top: 3px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-right: 2px solid rgb(255, 255, 255);
-    border-left: 2px solid rgb(255, 255, 255);
-    
---background:rgba(251, 251, 251, 0.219);
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 3em;
-font-weight: lighter;
-color: #FFF
-}
-.bg{
---background: linear-gradient(230deg,#FF4A7B,#FF4D4D);
-}
-.res{
-height: 70px;
-width: 70%;
-}
-.res1{
-height: 65px;
-width: 110%;
-}
-.AltMenu{
-color:#FF275B;
-}
+         max-width: 100%;
+         border-radius : 15px;
+         border-top: 3px solid rgb(255, 255, 255);
+         border-bottom: 2px solid rgb(255, 255, 255);
+         border-right: 2px solid rgb(255, 255, 255);
+         border-left: 2px solid rgb(255, 255, 255);
+         
+    --background:#FBFBFB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+  font-weight: lighter;
+  color: #FFF
+  }
 .bg{
     --background: linear-gradient(230deg,#FF4A7B,#FF4D4D);
   }
@@ -117,11 +109,7 @@ color:#FF275B;
 }
 .res1{
     height: 65px;
-    width: 180%;
-}
-.res2{
-    height: 65px;
-    width: 180%;
+    width: 110%;
 }
 .AltMenu{
     color:#FF275B;
