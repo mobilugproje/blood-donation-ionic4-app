@@ -14,6 +14,8 @@ const routes: Routes = [
   { path: 'faq', loadChildren: './faq/faq.module#FaqPageModule' },
   { path: 'doctor', loadChildren: './doctor/doctor.module#DoctorPageModule' },
   { path: 'doktorblooddonors', loadChildren: './doktorblooddonors/doktorblooddonors.module#DoktorblooddonorsPageModule' },
+  { path: 'sube', loadChildren: './sube/sube.module#SubePageModule' },
+  { path: 'subegoruntule', loadChildren: './subegoruntule/subegoruntule.module#SubegoruntulePageModule' },
 
 ];
 
