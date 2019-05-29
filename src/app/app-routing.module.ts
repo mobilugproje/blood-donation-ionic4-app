@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'doktorblooddonors', loadChildren: './doktorblooddonors/doktorblooddonors.module#DoktorblooddonorsPageModule' },
   { path: 'sube', loadChildren: './sube/sube.module#SubePageModule' },
   { path: 'subegoruntule', loadChildren: './subegoruntule/subegoruntule.module#SubegoruntulePageModule' },
+  { path: 'subeler', loadChildren: './subeler/subeler.module#SubelerPageModule' },
 
 ];
 

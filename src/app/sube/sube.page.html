@@ -1,4 +1,3 @@
-
 <ion-header no-border>
   <ion-toolbar class="myheader">
     <ion-buttons slot="start">
@@ -52,8 +51,14 @@
 
     <ion-button (click)="ekle(SubeBilgi)" text-capitalize="false" class="beyaz2" style="margin-bottom: 25px"
       expand="block">
-      <ion-icon slot="start" size="medium" name="save"></ion-icon>
       Şube Ekle
+      <ion-icon slot="start" size="medium" name="save"></ion-icon>
+    </ion-button>
+
+    <ion-button href="/subeler" text-capitalize="false" class="beyaz2" style="margin-bottom: 25px" expand="block">
+      Şubeleri Görüntüle
+      <ion-icon slot="start" size="medium" name="business"></ion-icon>
     </ion-button>
   </ion-card>
+
 </ion-content>
