@@ -7,12 +7,12 @@
 
 <ion-content class="bg">
 
-  <img src="../assets/blood-transfusion.png" class="resim">
+  <img style="margin-top: 16px ; width:150px; height: 150px;" src="../assets/blood-transfusion.png" class="resim" />
 
   <ion-card round class="Card">
 
     <h1 class="yazi">
-      <ion-icon name="phone-portrait"></ion-icon> GSM Numarası : {{(profileData | async)?.numara}}
+      <ion-icon name="phone-portrait"></ion-icon> GSM Numarası : 0-{{(profileData | async)?.numara}}
     </h1>
     <h1 class="yazi">
       <ion-icon name="contact"></ion-icon> Adı : {{(profileData | async)?.ad}}

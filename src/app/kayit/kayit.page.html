@@ -1,18 +1,18 @@
 <ion-header no-border>
   <ion-toolbar class="myheader">
-    <ion-title class="mybold">Kayıt Ol</ion-title>
+    <ion-title class="title">Kayıt Ol</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button color="danger"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="bg" padding>
   <ion-card>
     <ion-item>
       <ion-label class="mybold" position="floating">E-posta</ion-label>
       <ion-input class="mybold" type="text" [(ngModel)]="user.email"></ion-input>
     </ion-item>
+
 
     <ion-item>
       <ion-label class="mybold" position="floating">Şifre</ion-label>

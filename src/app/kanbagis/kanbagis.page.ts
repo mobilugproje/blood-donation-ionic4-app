@@ -11,13 +11,13 @@ import { delay } from 'q';
   styleUrls: ['./kanbagis.page.scss'],
 })
 export class KanbagisPage implements OnInit {
-  KanBagisi= {} as kanBagisi
+  KanBagisi = {} as kanBagisi
   KanBagisiRef$: AngularFireList<any>;
-  constructor(public navCtrl: NavController, public dataBase: AngularFireDatabase,private toast:ToastController,) { 
+  constructor(public navCtrl: NavController, public dataBase: AngularFireDatabase, private toast: ToastController, ) {
     this.KanBagisiRef$ = this.dataBase.list('kanbagislist');
-   
+
   }
-  async bagisla(kanBagisi: kanBagisi){
+  async bagisla(kanBagisi: kanBagisi) {
 
     const toast = await this.toast.create({
       message: 'Bağışınız başarıyla alınmıştır en kısa sürede tarafımızdan aranacaksınız.Teşekür ederiz',
@@ -25,24 +25,24 @@ export class KanbagisPage implements OnInit {
       showCloseButton: true,
       position: 'top',
       color: "light"
-           }); toast.present(); 
-    
-         
-  this.KanBagisiRef$.push({
-        
-    isim: this.KanBagisi.isim,
-    gsm: Number(this.KanBagisi.gsm),
-    konum: this.KanBagisi.konum,
-    kgrub: this.KanBagisi.kgrub,
-  }); //bu this.kanbagisis vs şey oluyor ekrandaki bilgiler gittikten sonra sıfırlamak için.
-  this.KanBagisi= {} as kanBagisi;
- //buraya tuşa basıldıktan sonra gidilecek yeri yapıcaz
+    }); toast.present();
 
- await delay(2500);
- location.href=('/mainmenu');
-}
-ngOnInit() {
-}
+
+    this.KanBagisiRef$.push({
+
+      isim: this.KanBagisi.isim,
+      gsm: Number(this.KanBagisi.gsm),
+      konum: this.KanBagisi.konum,
+      kgrub: this.KanBagisi.kgrub,
+    }); //bu this.kanbagisis vs şey oluyor ekrandaki bilgiler gittikten sonra sıfırlamak için.
+    this.KanBagisi = {} as kanBagisi;
+    //buraya tuşa basıldıktan sonra gidilecek yeri yapıcaz
+
+    await delay(2500);
+    location.href = ('/mainmenu');
+  }
+  ngOnInit() {
+  }
 
 }
 
