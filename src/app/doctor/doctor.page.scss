@@ -1,36 +1,41 @@
 .ios .md{
 
-    page-home{
-        button{
-            padding: 40px;
-        }
-    }
+  page-home{
+      button{
+          padding: 40px;
+      }
+  }
 }
 .AnaSayfaBaslik{
-    text-align: center;
-    --background: linear-gradient(180deg,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B ,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B ,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#ffffff);
-     
+  text-align: center;
+  --background: linear-gradient(180deg,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B ,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B ,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#FF4A7B,#ffffff);
+   
 }
 .mybold{
-    margin-top: 1%;
-    font-size: 140%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
+  margin-top: 1%;
+  font-size: 140%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
 
-    text-align: center;
-    color:  #ffffff;
-    
-  }
+  text-align: center;
+  color:  #ffffff;
+  
+}
 
-  .resim{
-    display: block;
-    height: 70vh;
-    width: auto;
-    margin: auto;
-  }
+.resim{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+  height:250px;
+  margin-top: -25px;
+}
 
 ion-card{
+<<<<<<< HEAD
     margin: 15px auto;
+      
+
          max-width: 99%;
          border-radius : 30px;
          border-top: 1px ;
@@ -43,52 +48,137 @@ ion-card{
   font-size: 3em;
   font-weight: lighter;
   
-  height:250px;
+  height:180px;
   width: 93%;
   
-  position: relative;
-      z-index: 1;
-     
+
   
   }
+=======
+  margin: 15px auto;
+    
+
+       max-width: 99%;
+       border-radius : 30px;
+       border-top: 1px ;
+       border-bottom: 1px  ;
+       border-right: 1px  ;
+       border-left: 1px ;
+       
+       --background:rgba(255, 255, 255, 0.308);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 3em;
+font-weight: lighter;
+
+height:180px;
+width: 93%;
+
+
+
+}
+>>>>>>> 7261a49685757ea1e3bff299154af4c54c6e98e4
 .bg{
-    --background: linear-gradient(180deg,#FF4A7B,#FF4D4D);
-  }
+  --background: linear-gradient(180deg,#FF4A7B,#FF4D4D);
+}
 .res{
-    height: 60px;
-    width: 60%;
+<<<<<<< HEAD
+    height: 50px;
+    width: 70%;
     color:#FF5E5E;
 }
-.iicon{
-    color:#FF275B;
-  }
-  .KartButon{
-    --border-radius: 18px;
-    height: 105px;
-    width: 31%;
-    
-    margin: 2px auto;
-    margin-left: 26px;
-    margin-top: 30px;
+.icon{
+  height: 50px;
+  width: 70%;
+  color:#FF5E5E;
 
-    font-size: 15%;
-    --background:rgb(255, 255, 255);
-  
-     
 }
-.KartButon2{
-    --border-radius: 18px;
+  .KartButon{
+    --border-radius: 21px;
+    height: 80px;
+    width: 25%;
     
-    height: 105px;
-    width: 31%;
 
-    margin: 2px auto;
-    margin-left: 78px;
-    margin-top: 30px;
+    margin-left: 21px;
+    margin-top: 2px;
+
+    
+    --background:rgb(255, 255, 255);
+
+
+    position: relative;
+    z-index: 1;
+  
+}
+
+.KartButon2{
+  --border-radius:21px;
+
+  height:80px;
+  width:25%;
+
+  margin-left: 21px;
+  margin-top:10px;
+
+  --background:rgb(255, 255, 255);
+
+  position: relative;
+  z-index: 1;
+  
+}
+
+.KartButon3{
+  --border-radius: 21px;
+    
+    height: 80px;
+    width: 25%;
+
+   
+    margin-left: 21px;
+    margin-top: 10px;
+   
+
+    --background:rgb(255, 255, 255);
+
+    position: relative;
+    z-index: 1;
    
     
-    font-size: 15%;
-    --background:rgb(255, 255, 255);
-    
 }
 
+=======
+  height: 50px;
+  width: 70%;
+  color:#FF5E5E;
+}
+.icon{
+height: 50px;
+width: 70%;
+color:#FF5E5E;
+}
+
+.KartButon{
+  --border-radius: 21px;
+  height: 80px;
+  width: 25%;
+  
+
+  margin-left: 21px;
+  margin-top: 10px;
+
+  
+  --background:rgb(255, 255, 255);
+
+
+  position: relative;
+  z-index: 1;
+
+}
+
+
+>>>>>>> 7261a49685757ea1e3bff299154af4c54c6e98e4
+.cikislabel{
+  font-size: 15%;
+  color: #FF5E5E;
+  margin-top: 10px;
+  
+}

@@ -3,12 +3,19 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="mainmenu" color="light"></ion-back-button>
     </ion-buttons>
-    <ion-title class="mybold">Kan Bağışlayanlar<br> Listesi</ion-title>
+    <ion-title class="mybold">Kan Bağışlayanlar Listesi</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content class="bg" padding>
+
+          <ion-searchbar placeholder = "Arama Yap" (ionInput)="getItems($event)"></ion-searchbar>
+
+  
   <ion-card>
+     
     <ion-list lines="inset">
       <ion-item *ngFor="let item of kanbagislistRef$ | async">
         <ion-label>

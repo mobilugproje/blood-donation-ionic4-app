@@ -21,13 +21,14 @@
     color:  #ffffff;
     
   }
+
   .KartButon{
     --border-radius: 21px;
-    height: 80px;
-    width: 25%;
+    height: 90px;
+    width: 26.5%;
     
 
-    margin-left: 21px;
+    margin-left: 55px;
     margin-top: 10px;
 
     
@@ -35,39 +36,6 @@
     position: relative;
     z-index: 1;
      
-}
-.KartButon2{
-    --border-radius: 21px;
-    
-    height: 80px;
-    width: 25%;
-
-   
-    margin-left: 21px;
-    margin-top: 10px;
-   
-    
-    
-    --background:rgb(255, 255, 255);
-    position: relative;
-    z-index: 1;
-}
-
-
-
-.KartButon3{
-    --border-radius:21px;
-
-    height:80px;
-    width:25%;
-
-    margin-left: 21px;
-    margin-top:10px;
-
-    --background:rgb(255, 255, 255);
-
-    position: relative;
-    z-index: 1;
 }
 
 .resim{

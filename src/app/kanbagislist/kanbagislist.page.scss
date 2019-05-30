@@ -74,3 +74,8 @@ color:  #ffffff;
 .bg{
   --background: linear-gradient(230deg,#FF4A7B,#FF4D4D);
 }
+ion-searchbar{
+  --border-radius: 21px;
+  position: relative;
+  z-index: 1;
+}

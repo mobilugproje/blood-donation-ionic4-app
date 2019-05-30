@@ -15,6 +15,8 @@ import { AngularFireAuth } from '@angular/fire/auth';
 export class DoktorblooddonorsPage implements OnInit {
   kanbagislistRef$: AngularFireList<kanBagisi>;
   kanbagislistAsync$: any;
+
+  
   constructor(public actionSheetController: ActionSheetController, public dataBase: AngularFireDatabase) {
     this.kanbagislistRef$ = this.dataBase.list('kanbagislist');
     this.kanbagislistAsync$ = this.kanbagislistRef$.snapshotChanges();
