@@ -35,11 +35,9 @@ export class SubePage implements OnInit {
     });
     this.SubeBilgi = {} as subeBilgi;
     await delay(2000);
-<<<<<<< HEAD
+    
     location.href = ('/doctor');
-=======
-    location.href = ('/doktor');
->>>>>>> 7261a49685757ea1e3bff299154af4c54c6e98e4
+
   }
   ngOnInit() {
   }
