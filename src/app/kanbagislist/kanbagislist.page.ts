@@ -10,16 +10,13 @@ import { Observable } from 'rxjs';
   styleUrls: ['./kanbagislist.page.scss'],
 })
 export class KanbagislistPage implements OnInit {
-  
+
   kanbagislistRef$: Observable<any[]>;
 
   constructor(public navCtrl: NavController, public dataBase: AngularFireDatabase) {
     this.kanbagislistRef$ = this.dataBase.list('kanbagislist').valueChanges();
 
-       }
-
-
-
+  }
 
   ngOnInit() {
   }

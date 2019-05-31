@@ -29,7 +29,8 @@
     
 
     margin-left: 55px;
-    margin-top: 1px;
+    margin-top: -45px;
+    margin-bottom: 5px;
 
     
     --background:rgb(255, 255, 255);
@@ -48,9 +49,9 @@
   ion-card{
 
          
-    height:340px;
+    height:260px;
     max-width: 100%;
-    border-radius : 15px;
+    border-radius : 25px;
     border-top: 3px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);
